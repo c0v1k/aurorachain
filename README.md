@@ -4,7 +4,7 @@ What is AuroraChain?
 AuroraChain is an experimental digital currency that enables instant payments to anyone, anywhere in the world. AuroraChain uses peer-to-peer technology to operate with no central authority: managing transactions and issuing money are carried out collectively by the network. AuroraChain Core is the name of open-source software which enables the use of this currency.
 
 License
-AuroraChain Core is released under the terms of the MIT license. See COPYING for more information or see https://opensource.org/licenses/MIT.
+AuroraChain Core is released under the terms of the MIT license. See more information on https://opensource.org/licenses/MIT.
 
 Development Process
 The master branch is regularly built (see doc/build-*.md for instructions) and tested, but it is not guaranteed to be completely stable. Tags are created regularly from release branches to indicate new official, stable release versions of AuroraChain Core.
