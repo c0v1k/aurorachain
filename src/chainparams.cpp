@@ -129,14 +129,14 @@ public:
         vSeeds.emplace_back("dnsseed.litecoinpool.org");
         vSeeds.emplace_back("dnsseed.koin-project.com");
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,10);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,83);
         base58Prefixes[EXT_PUBLIC_KEY] = {0xA0, 0x88, 0xB2, 0x1F};
         base58Prefixes[EXT_SECRET_KEY] = {0xA0, 0x88, 0xAD, 0xE5};
 
-        bech32_hrp = "ltc";
+        bech32_hrp = "aura";
         mweb_hrp = "ltcmweb";
 
         vFixedSeeds = std::vector<uint8_t>(std::begin(chainparams_seed_main), std::end(chainparams_seed_main));
