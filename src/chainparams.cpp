@@ -63,7 +63,7 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
 class CMainParams : public CChainParams {
 public:
     CMainParams() {
-        strNetworkID = CBaseChainParams::MAIN;
+        strNetworkID = "aurorachain";
         consensus.signet_blocks = false;
         consensus.signet_challenge.clear();
         consensus.nSubsidyHalvingInterval = 840000;
@@ -133,8 +133,8 @@ public:
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
-        base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
-        base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
+        base58Prefixes[EXT_PUBLIC_KEY] = {0xA0, 0x88, 0xB2, 0x1F};
+        base58Prefixes[EXT_SECRET_KEY] = {0xA0, 0x88, 0xAD, 0xE5};
 
         bech32_hrp = "ltc";
         mweb_hrp = "ltcmweb";
@@ -182,7 +182,7 @@ public:
 class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
-        strNetworkID = CBaseChainParams::TESTNET;
+        strNetworkID = "aurorachain-testnet";
         consensus.signet_blocks = false;
         consensus.signet_challenge.clear();
         consensus.nSubsidyHalvingInterval = 840000;
@@ -279,7 +279,7 @@ public:
 class CRegTestParams : public CChainParams {
 public:
     explicit CRegTestParams(const ArgsManager& args) {
-        strNetworkID =  CBaseChainParams::REGTEST;
+        strNetworkID =  "aurorachain-regtest";
         consensus.signet_blocks = false;
         consensus.signet_challenge.clear();
         consensus.nSubsidyHalvingInterval = 150;
